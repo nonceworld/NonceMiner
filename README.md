@@ -43,6 +43,8 @@ wasmAddress: Your GEB WASM address (optional)
 
 pool.nonce.world: Official GEB mining pool address
 
+You can open [https://miner.nonce.world/](https://miner.nonce.world) in your browser, enter your EVM address, and check your earnings.
+
 ---
 
 ## 📝 Disclaimer
