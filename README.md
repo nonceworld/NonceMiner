@@ -35,7 +35,7 @@ You can add the installation folder to the exclusion list in **Windows Security 
 Linux users can download the appropriate `xmrig` binary from the [xmrig release page](https://github.com/xmrig/xmrig/releases) and mine directly without the GUI:
 
 ```bash
-./xmrig --user evmAddress,wasmAddress --url pool.nonce.world --coin XMR -p x -k
+./xmrig --user evmAddress,wasmAddress --url p.nonce.world:3334 --coin XMR -p x -k
 ```
 evmAddress: Your EVM address
 
