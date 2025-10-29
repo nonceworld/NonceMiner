@@ -35,13 +35,13 @@ You can add the installation folder to the exclusion list in **Windows Security 
 Linux users can download the appropriate `xmrig` binary from the [xmrig release page](https://github.com/xmrig/xmrig/releases) and mine directly without the GUI:
 
 ```bash
-./xmrig --user evmAddress,wasmAddress --url p.nonce.world:3334 --coin XMR -p x -k
+./xmrig --user evmAddress,wasmAddress --url pool-mainnet-01.nonce.world:3337 --coin XMR -p x -k
 ```
 evmAddress: Your EVM address
 
 wasmAddress: Your GEB WASM address (optional)
 
-p.nonce.world: Official GEB mining pool address
+pool-mainnet-01.nonce.world:3337: Official GEB mining pool address
 
 You can open [https://miner.nonce.world/](https://miner.nonce.world) in your browser, enter your EVM address, and check your earnings.
 
