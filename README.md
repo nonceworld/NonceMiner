@@ -17,13 +17,13 @@ With a simple graphical interface, you can easily participate in **Nonce token m
 
 ## 📥 Installation & Usage
 
-### GUI Version (Recommended)
+### Installation
 
 1. Visit the [Releases page](../../releases)  
 2. Download the appropriate installer or archive for your operating system:  
    - Windows: `.exe` installer  
    - macOS: `.dmg` / `.zip`  
-   - Linux: use the `xmrig` CLI version directly
+   - Linux：`.tar.gz`
 3. Run the installer or extract the archive, then launch the application to start mining.
 
 ⚠️ **Note for Windows Users**  
@@ -32,18 +32,34 @@ You can add the installation folder to the exclusion list in **Windows Security 
 
 ### CLI Version (Linux)
 
-Linux users can download the appropriate `xmrig` binary from the [xmrig release page](https://github.com/xmrig/xmrig/releases) and mine directly without the GUI:
-
-```bash
-./xmrig --user evmAddress,wasmAddress --url pool-mainnet-01.nonce.world:3337 --coin XMR -p x -k
+Download and extract:
 ```
+wget https://github.com/nonceworld/NonceMiner/releases/download/v0.2.0/nonceminer-linux-0.2.0.tar.gz
+tar -zxvf nonceminer-0.2.0.tar.gz
+cd nonceminer-0.2.0
+./miner start --user {$evmAddress},{$wasmAddress}@{$worker}
+```
+
 evmAddress: Your EVM address
 
 wasmAddress: Your GEB WASM address (optional)
 
-pool-mainnet-01.nonce.world:3337: Official GEB mining pool address
+worker: A name used to distinguish different machines you run the miner on
 
-You can open [https://miner.nonce.world/](https://miner.nonce.world) in your browser, enter your EVM address, and check your earnings.
+Example:
+```
+./miner start --user 0xdadB0d80178819F2319190D340ce9A924f783711,5Grux3pkj5adMKksEabeabMVHAsehvJ91s9WubQt7DvzqsSq@worker001
+```
+
+Other supported commands:
+```
+./miner status
+./miner stop
+./miner stop --miner=XMR
+./miner stop --miner=XTMGPU
+```
+
+You may also edit the config.yaml file in the directory to add extra command arguments for the mining software.
 
 ---
 
